@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8ae4ecf5fb.js" crossorigin="anonymous"></script>
+    
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="https://sumitandeportfolio.netlify.app/" target="_blank">
+                <img src="images/logo6.jpg" class="logo">
+                </a>
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="window.location.reload(true);">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Projects</a></li>
+                    <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                
+            </nav>
+            <div class="header-text">
+                <p>Hello there!</p>
+                <h1>I'm <span>Sumit</span><br></h1>
+                <p class="typed">"I stand on sweet spot where design & code intersects..!"</p>
+                
+                
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-----------------about----------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p align= "justify">"My name is Sumit Ande. I'm graduated in Mechanical Engineering from PRPCEM, Amravati.
+                        I am outgoing, dedicated, and open-minded. 
+                        I get across to people and adjust to changes with ease. 
+                        I believe that a person should work on developing their professional 
+                        skills and learning new things all the time.
+                        I am always open to challenges and constructive feedback. I am open-minded and learn new things quickly. 
+                        Here is my related Skills and Educational details."
+                 </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Backend Technologies</span><br>Java language, OOPs concepts</li>
+                            <!-- <li><span>Java Frameworks</span><br>Spring MVC, Spring Boot</li> -->
+                            <li><span>Web Technologies</span><br>HTML, CSS, Javascript</li>
+                            <li><span>Database</span><br>Oracle SQL</li>
+                            <li><span>Tools</span><br>VS-Code, inteliJ, MySQL WorkBench</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2013-2014</span><br>SSC(Science), Janata High School.</li>
+                            <li><span>2015-2016</span><br>HSC(Science), N.G.Moghe Junior College.</li>
+                            <li><span>2016-2020</span><br>BE(Mechanical), P.R.Pote College of Engineering & Management.</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------Services------ -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-print"></i>
+                    <h2>Optimization of 3D printer</h2>
+                    <p>(CATIA V5, Marlin Firmware Software, Slic3r[a tool path generator]) </p>
+                    <p align= "justify">: In this project, a additive manufacturing process
+                         has been set up to create a three dimensional solid objects from a digital design to develop new methods of production 
+                        with updating the system and optimize the 3D printing parameters.</p>
+                    <a href="images/Optimization of 3D Printer Report.pdf" target="_blank">See more</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-file"></i>
+                      
+                    <h2>My Portfolio</h2>
+                    <p>(HTML, CSS, Javascript)</p>
+                    <p align= "justify">: In this project, I have built a personal portfolio site ,
+                        which is is a compilation of my academic and professional
+                        materials that exemplifies my beliefs, skills, qualifications,
+                        education. It provides insight into my personality and work ethic.
+                        </p>
+                    <a href="https://github.com/SumitAnde/sumitandeportfolio" target="_blank">See more</a>
+                </div>
+                <!-- <div>
+                    <i class="fa-solid fa-qrcode"></i>
+                    <h2>QR Code Generator</h2>
+                    <p>(Java, Spring Boot, Spring Framework, basic HTML & CSS)</p>
+                    <p align= "justify">: This QR code generator is a Web app that creates QR codes, in which you can store a variety of data/information. In this you have to enter some details like your name                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              address, phone number &  email address. website will do the rest of the work 
+                        for you and in seconds, it will have created a fully functional QR code for you.</p>
+                    <a href="https://github.com/SumitAnde/QRCode_Generator.git" target="_blank">See more</a>
+                </div> -->
+            </div>
+
+        </div>
+    </div>
+   <!-- --------Portfolio-------
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+              <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media</h3>
+                    <p align= "justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia placea saepe archit</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+              </div>
+              <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Social Media</h3>
+                    <p align= "justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia placea saepe archit</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+              </div>
+              <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Social Media</h3>
+                    <p align= "justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia placea saepe archit</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div> -->
+    <!-- -----------Contact------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> sumitande.98@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 7038094317</p>
+                    <div class="social-icons">
+                        <a href="https://wa.me/7038094317"  target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://github.com/SumitAnde"  target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://instagram.com/16_sumit_?igshid=MzNlNGNkZWQ4Mg=="  target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/sumit-ande-238b8a217/"  target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Ande_Sumit_Resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright <i class="fa-regular fa-copyright"></i> Sumit. Made with love</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+       
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+            
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyiqXKNzOdzTJ2f8o0dg-qxGaaH-5vdcZVbAjb_uOdBuK3hgJZjmxbGzzEbE8gvaKpR/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully!"
+                setTimeout(function(){
+                    msg.innerHTML =""
+                },5000)
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+
+</body>
+
+</html>
